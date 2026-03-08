@@ -1,0 +1,1478 @@
+WARNING:root:No module named 'tensorflow': AdversarialDebiasing will be unavailable. To install, run:
+pip install 'aif360[AdversarialDebiasing]'
+WARNING:root:No module named 'tensorflow': AdversarialDebiasing will be unavailable. To install, run:
+pip install 'aif360[AdversarialDebiasing]'
+WARNING:root:No module named 'fairlearn': ExponentiatedGradientReduction will be unavailable. To install, run:
+pip install 'aif360[Reductions]'
+WARNING:root:No module named 'fairlearn': GridSearchReduction will be unavailable. To install, run:
+pip install 'aif360[Reductions]'
+WARNING:root:No module named 'inFairness': SenSeI and SenSR will be unavailable. To install, run:
+pip install 'aif360[inFairness]'
+WARNING:root:No module named 'fairlearn': GridSearchReduction will be unavailable. To install, run:
+pip install 'aif360[Reductions]'
+Carregando 10 bases...
+  pd_v0         50979 reg  g1=32334(f23195/l 9139)  g4=18645(f17133/l 1512)
+  pd_v0.25      68423 reg  g1=49307(f41556/l 7751)  g4=19116(f 9413/l 9703)
+  pd_v0.5       84150 reg  g1=61201(f60244/l  957)  g4=22949(f 6958/l15991)
+  pd_v0.75     109568 reg  g1=74602(f71626/l 2976)  g4=34966(f 8662/l26304)
+  pd_v1        117217 reg  g1=82719(f82719/l    0)  g4=34498(f 4313/l30185) [monocl]
+  gs_v0         51363 reg  g1=23508(f18964/l 4544)  g4=27855(f20927/l 6928)
+  gs_v0.25      73008 reg  g1=16395(f11100/l 5295)  g4=56613(f43397/l13216)
+  gs_v0.5      109132 reg  g1=10644(f 7448/l 3196)  g4=98488(f74246/l24242)
+  gs_v0.75     130055 reg  g1= 3618(f 3618/l    0)  g4=126437(f97966/l28471) [monocl]
+  gs_v1        131008 reg  g1=    0(f    0/l    0)  g4=131008(f110840/l20168) [sem_grupo]
+
+--- Medidas de vies nos dados brutos ---
+        Base  Serie   Vies       CI  SPD_dados       DI
+-------------------------------------------------------
+       pd_v0    PD   0.00  +0.2685    +0.2015    1.281
+    pd_v0.25    PD   0.25  +0.4412    -0.3504    0.584
+     pd_v0.5    PD   0.50  +0.4546    -0.6812    0.308
+    pd_v0.75    PD   0.75  +0.3617    -0.7124    0.258
+       pd_v1    PD   1.00  +0.4114    -0.8750    0.125
+       gs_v0    GS   0.00  -0.0846    -0.0554    0.931
+    gs_v0.25    GS   0.25  -0.5509    +0.0895    1.132
+     gs_v0.5    GS   0.50  -0.8049    +0.0541    1.077
+    gs_v0.75    GS   0.75  -0.9444    -0.2252    0.775
+       gs_v1    GS   1.00  -1.0000        N/A      N/A
+  -> ./resultados/vies_dados.csv e fig0_vies_dados.png
+
+10 ciclos de treino (3 degeneradas: ['pd_v1', 'gs_v0.75', 'gs_v1'])
+Total: 360 experimentos
+
+Treinando...
+[Parallel(n_jobs=3)]: Using backend LokyBackend with 3 concurrent workers.
+WARNING:root:No module named 'tensorflow': AdversarialDebiasing will be unavailable. To install, run:
+pip install 'aif360[AdversarialDebiasing]'
+WARNING:root:No module named 'tensorflow': AdversarialDebiasing will be unavailable. To install, run:
+pip install 'aif360[AdversarialDebiasing]'
+WARNING:root:No module named 'fairlearn': ExponentiatedGradientReduction will be unavailable. To install, run:
+pip install 'aif360[Reductions]'
+WARNING:root:No module named 'fairlearn': GridSearchReduction will be unavailable. To install, run:
+pip install 'aif360[Reductions]'
+WARNING:root:No module named 'inFairness': SenSeI and SenSR will be unavailable. To install, run:
+pip install 'aif360[inFairness]'
+WARNING:root:No module named 'fairlearn': GridSearchReduction will be unavailable. To install, run:
+pip install 'aif360[Reductions]'
+WARNING:root:No module named 'tensorflow': AdversarialDebiasing will be unavailable. To install, run:
+pip install 'aif360[AdversarialDebiasing]'
+WARNING:root:No module named 'tensorflow': AdversarialDebiasing will be unavailable. To install, run:
+pip install 'aif360[AdversarialDebiasing]'
+WARNING:root:No module named 'fairlearn': ExponentiatedGradientReduction will be unavailable. To install, run:
+pip install 'aif360[Reductions]'
+WARNING:root:No module named 'fairlearn': GridSearchReduction will be unavailable. To install, run:
+pip install 'aif360[Reductions]'
+WARNING:root:No module named 'inFairness': SenSeI and SenSR will be unavailable. To install, run:
+pip install 'aif360[inFairness]'
+WARNING:root:No module named 'fairlearn': GridSearchReduction will be unavailable. To install, run:
+pip install 'aif360[Reductions]'
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+WARNING:root:No module named 'tensorflow': AdversarialDebiasing will be unavailable. To install, run:
+pip install 'aif360[AdversarialDebiasing]'
+WARNING:root:No module named 'tensorflow': AdversarialDebiasing will be unavailable. To install, run:
+pip install 'aif360[AdversarialDebiasing]'
+WARNING:root:No module named 'fairlearn': ExponentiatedGradientReduction will be unavailable. To install, run:
+pip install 'aif360[Reductions]'
+WARNING:root:No module named 'fairlearn': GridSearchReduction will be unavailable. To install, run:
+pip install 'aif360[Reductions]'
+WARNING:root:No module named 'inFairness': SenSeI and SenSR will be unavailable. To install, run:
+pip install 'aif360[inFairness]'
+WARNING:root:No module named 'fairlearn': GridSearchReduction will be unavailable. To install, run:
+pip install 'aif360[Reductions]'
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 319, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 166, in main
+    clr = train(X, y, ns, opt)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 128, in train
+    clr.fit(X, y, ns, itype=opt.itype)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/fadm/lr/pr.py", line 285, in fit
+    self.init_coef(itype, X, y, s)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/fadm/lr/pr.py", line 241, in init_coef
+    clr.fit(X[s == i, :], y[s == i])
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/base.py", line 1336, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py", line 1243, in fit
+    raise ValueError(
+ValueError: This solver needs samples of at least 2 classes in the data, but the data contains only one class: np.float64(0.0)
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 319, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 166, in main
+    clr = train(X, y, ns, opt)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 128, in train
+    clr.fit(X, y, ns, itype=opt.itype)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/fadm/lr/pr.py", line 285, in fit
+    self.init_coef(itype, X, y, s)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/fadm/lr/pr.py", line 241, in init_coef
+    clr.fit(X[s == i, :], y[s == i])
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/base.py", line 1336, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py", line 1243, in fit
+    raise ValueError(
+ValueError: This solver needs samples of at least 2 classes in the data, but the data contains only one class: np.float64(0.0)
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 319, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 166, in main
+    clr = train(X, y, ns, opt)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 128, in train
+    clr.fit(X, y, ns, itype=opt.itype)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/fadm/lr/pr.py", line 285, in fit
+    self.init_coef(itype, X, y, s)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/fadm/lr/pr.py", line 241, in init_coef
+    clr.fit(X[s == i, :], y[s == i])
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/base.py", line 1336, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py", line 1243, in fit
+    raise ValueError(
+ValueError: This solver needs samples of at least 2 classes in the data, but the data contains only one class: np.float64(0.0)
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 319, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 166, in main
+    clr = train(X, y, ns, opt)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 128, in train
+    clr.fit(X, y, ns, itype=opt.itype)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/fadm/lr/pr.py", line 285, in fit
+    self.init_coef(itype, X, y, s)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/fadm/lr/pr.py", line 241, in init_coef
+    clr.fit(X[s == i, :], y[s == i])
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/base.py", line 1336, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py", line 1243, in fit
+    raise ValueError(
+ValueError: This solver needs samples of at least 2 classes in the data, but the data contains only one class: np.float64(0.0)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpbrahy64m"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmp1jf2zbl3"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmp140neu15"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmptbfmkar9"
+  m = np.loadtxt(output_name)
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmp2cfuhja5"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpt267fhoe"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpavr88usv"
+  m = np.loadtxt(output_name)
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpxajewj6i"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmp30_ztcly"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpsp5625c4"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpdie04i86"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpauc0w47h"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpq2p_f0up"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpzrj99dzr"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpwi6heopc"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmphr1rpqdc"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpeajthekg"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpnmict_ru"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpjijlg4lc"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmp3cvmcydu"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmp9ykljw03"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmp6kl13zuk"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpv45mr7mk"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmphkf3qgjd"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmp7bx_9psg"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmp3vbf4usq"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpex8jdik8"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmp53amg3he"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmprpjvqqmh"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmp_fhwpi2z"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpitm2rwd7"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmphqmcw1n9"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpgyc04xi6"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpr5_cnl7k"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpydb_ut82"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpndrelum_"
+  m = np.loadtxt(output_name)
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 319, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 166, in main
+    clr = train(X, y, ns, opt)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 128, in train
+    clr.fit(X, y, ns, itype=opt.itype)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/fadm/lr/pr.py", line 285, in fit
+    self.init_coef(itype, X, y, s)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/fadm/lr/pr.py", line 241, in init_coef
+    clr.fit(X[s == i, :], y[s == i])
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/base.py", line 1336, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py", line 1243, in fit
+    raise ValueError(
+ValueError: This solver needs samples of at least 2 classes in the data, but the data contains only one class: np.float64(0.0)
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 319, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 166, in main
+    clr = train(X, y, ns, opt)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 128, in train
+    clr.fit(X, y, ns, itype=opt.itype)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/fadm/lr/pr.py", line 285, in fit
+    self.init_coef(itype, X, y, s)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/fadm/lr/pr.py", line 241, in init_coef
+    clr.fit(X[s == i, :], y[s == i])
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/base.py", line 1336, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py", line 1243, in fit
+    raise ValueError(
+ValueError: This solver needs samples of at least 2 classes in the data, but the data contains only one class: np.float64(0.0)
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 319, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 166, in main
+    clr = train(X, y, ns, opt)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 128, in train
+    clr.fit(X, y, ns, itype=opt.itype)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/fadm/lr/pr.py", line 285, in fit
+    self.init_coef(itype, X, y, s)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/fadm/lr/pr.py", line 241, in init_coef
+    clr.fit(X[s == i, :], y[s == i])
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/base.py", line 1336, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py", line 1243, in fit
+    raise ValueError(
+ValueError: This solver needs samples of at least 2 classes in the data, but the data contains only one class: np.float64(0.0)
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 319, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 166, in main
+    clr = train(X, y, ns, opt)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 128, in train
+    clr.fit(X, y, ns, itype=opt.itype)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/fadm/lr/pr.py", line 285, in fit
+    self.init_coef(itype, X, y, s)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/fadm/lr/pr.py", line 241, in init_coef
+    clr.fit(X[s == i, :], y[s == i])
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/base.py", line 1336, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py", line 1243, in fit
+    raise ValueError(
+ValueError: This solver needs samples of at least 2 classes in the data, but the data contains only one class: np.float64(0.0)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpt59ad9e3"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpi1jss6fl"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmp9c7xhzc5"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmp9tlyacub"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmprsidmk9t"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpew42c5zj"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpve4fgn7w"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmp8h15vdlm"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpufe_qzrf"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpalxav76y"
+  m = np.loadtxt(output_name)
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 319, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 166, in main
+    clr = train(X, y, ns, opt)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 128, in train
+    clr.fit(X, y, ns, itype=opt.itype)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/fadm/lr/pr.py", line 285, in fit
+    self.init_coef(itype, X, y, s)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/fadm/lr/pr.py", line 241, in init_coef
+    clr.fit(X[s == i, :], y[s == i])
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/base.py", line 1336, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py", line 1191, in fit
+    X, y = validate_data(
+           ^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 2919, in validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 1314, in check_X_y
+    X = check_array(
+        ^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 1097, in check_array
+    raise ValueError(
+ValueError: Found array with 0 sample(s) (shape=(0, 7)) while a minimum of 1 is required by LogisticRegression.
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmp5k9fhphc"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpf2kya5np"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpw8txbixi"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpxpmpmuk5"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmp9ijwkxkh"
+  m = np.loadtxt(output_name)
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 319, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 166, in main
+    clr = train(X, y, ns, opt)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 128, in train
+    clr.fit(X, y, ns, itype=opt.itype)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/fadm/lr/pr.py", line 285, in fit
+    self.init_coef(itype, X, y, s)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/fadm/lr/pr.py", line 241, in init_coef
+    clr.fit(X[s == i, :], y[s == i])
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/base.py", line 1336, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py", line 1191, in fit
+    X, y = validate_data(
+           ^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 2919, in validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 1314, in check_X_y
+    X = check_array(
+        ^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 1097, in check_array
+    raise ValueError(
+ValueError: Found array with 0 sample(s) (shape=(0, 7)) while a minimum of 1 is required by LogisticRegression.
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpptn2vfsx"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpv8liarf2"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmphuttglji"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmp_z_vp338"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmprxnc5lqr"
+  m = np.loadtxt(output_name)
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 319, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 166, in main
+    clr = train(X, y, ns, opt)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 128, in train
+    clr.fit(X, y, ns, itype=opt.itype)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/fadm/lr/pr.py", line 285, in fit
+    self.init_coef(itype, X, y, s)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/fadm/lr/pr.py", line 241, in init_coef
+    clr.fit(X[s == i, :], y[s == i])
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/base.py", line 1336, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py", line 1191, in fit
+    X, y = validate_data(
+           ^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 2919, in validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 1314, in check_X_y
+    X = check_array(
+        ^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 1097, in check_array
+    raise ValueError(
+ValueError: Found array with 0 sample(s) (shape=(0, 7)) while a minimum of 1 is required by LogisticRegression.
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmph1br_jel"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpptoag66m"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmp1x9ce0g8"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpbx6z40ko"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmp9ktqvvxa"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpc527nurp"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpmo2khvzj"
+  m = np.loadtxt(output_name)
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 319, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 166, in main
+    clr = train(X, y, ns, opt)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/train_pr.py", line 128, in train
+    clr.fit(X, y, ns, itype=opt.itype)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/fadm/lr/pr.py", line 285, in fit
+    self.init_coef(itype, X, y, s)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/fadm/lr/pr.py", line 241, in init_coef
+    clr.fit(X[s == i, :], y[s == i])
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/base.py", line 1336, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py", line 1191, in fit
+    X, y = validate_data(
+           ^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 2919, in validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 1314, in check_X_y
+    X = check_array(
+        ^^^^^^^^^^^^
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 1097, in check_array
+    raise ValueError(
+ValueError: Found array with 0 sample(s) (shape=(0, 7)) while a minimum of 1 is required by LogisticRegression.
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmp1o9u_akl"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpy1p1fbo6"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmplnco7bk9"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmp5ltk1lxz"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpmm_zv669"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpv33zyvwz"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpvinrpt2q"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpitox496y"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmphbv3i_7j"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmph1sswqta"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpvm_cq6zf"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpks6kvk2y"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpa01r4bpp"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpj95upom1"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpmxr4c7oe"
+  m = np.loadtxt(output_name)
+[Parallel(n_jobs=3)]: Done   8 out of  10 | elapsed:  5.9min remaining:  1.5min
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpp4ml6pr4"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpubtd67d8"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpssg56dcl"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmp_kpei1yy"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmp460dti5_"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpbqqjqf93"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpwcyj_wvx"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmp1buerzj0"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpkrbjqt_6"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpap2d_ofe"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmps3n1552x"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpsc7j2p7z"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpkgw25apu"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpyvaz5wyg"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpcdg68zv2"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpg2ixqewq"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpya69xpsx"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmp22ngs3cd"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmptq5e0vh5"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmptrai1nzp"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpwv7gdhdu"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpvxps5io3"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmp1cxr_peb"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpye52md4q"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpyrh30e48"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmp9ugl_djt"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpbnq8meij"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpdf_t6qs4"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmpzm4fmvpu"
+  m = np.loadtxt(output_name)
+Traceback (most recent call last):
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 278, in <module>
+    main(opt)
+  File "/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/kamfadm-2012ecmlpkdd/predict_lr.py", line 110, in main
+    clr = pickle.load(opt.model)
+          ^^^^^^^^^^^^^^^^^^^^^^
+EOFError: Ran out of input
+/home/ricardo/Downloads/Projeto de AM (Luis)/venv/lib/python3.12/site-packages/aif360/algorithms/inprocessing/prejudice_remover.py:208: UserWarning: loadtxt: input contained no data: "/tmp/tmply1lmg0e"
+  m = np.loadtxt(output_name)
+[Parallel(n_jobs=3)]: Done  10 out of  10 | elapsed:  7.0min finished
+
+============================================================
+Resumo (ciclos validos: 7 bases)
+  eta       F1      +-    |SPD|      +-     FR
+------------------------------------------------------------
+    0   0.6347  0.1919   0.4552  0.2644  0.210
+    5   0.6219  0.1518   0.3401  0.1750  0.268
+   25   0.5513  0.1626   0.2507  0.1578  0.320
+   50   0.5595  0.1649   0.3174  0.1867  0.268
+
+Ciclos degenerados (['pd_v1', 'gs_v0.75', 'gs_v1']):
+  eta=0: F1=0.3721 |SPD|=0.0000
+  eta=5: F1=0.3721 |SPD|=0.0000
+  eta=25: F1=0.3721 |SPD|=0.0000
+  eta=50: F1=0.3721 |SPD|=0.0000
+
+Recomendacao: eta=25 (F1=0.5513, |SPD|=0.2507, FR=0.320)
+  Graficos: ./resultados/fig0..fig3.png
+
+Concluido em 428s (7.1 min)
